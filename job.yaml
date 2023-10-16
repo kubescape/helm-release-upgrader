@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: update-kubescape
+  namespace: kubescape-autoupdater
+spec:
+  template:
+    metadata:
+      name: ks-autoupdate-pod
+      namespace: "kubescape-autoupdater"
+    spec:
+      serviceAccountName: "kubescape-autoupdater"
+      containers:
+      - name: updater
+        image: ks-autoupdate:latest
+        imagePullPolicy: Never
+      restartPolicy: Never
