@@ -1,7 +1,0 @@
-autoUpdater:
-  name: "kubescape-auto-updater"
-  image:
-    repository: "kubescape/autoupdater"
-    tag: "latest"
-    pullPolicy: "IfNotPresent"
-  schedule: "0 0 * * *"
