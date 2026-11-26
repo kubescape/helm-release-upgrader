@@ -1,3 +1,5 @@
+> **Archived:** This repository is archived and no longer maintained. The Helm release upgrader image was replaced by `kubescape-ops-tool` in [kubescape/helm-charts#929](https://github.com/kubescape/helm-charts/pull/929).
+
 # Helm Release Upgrader
 
 Helm Release Upgrader upgrades the Kubescape Helm release that runs in a cluster to spare you the effort of doing it yourself.
